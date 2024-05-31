@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental website</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+    <!--flaticon.css-->
+    <link rel="stylesheet" href="assets/css/flaticon.css">
+    <!--font-family-->
+    <link
+        href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Rufina:400,700" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- boostrap navbar -->
+    <nav id="navBar" class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a id="logo" class="navbar-brand" href="#">TheWeekendRide</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#newCar">New Car</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#rent-cars">Rent Car</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#BookCar">Book Car</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#footer">Contact Us</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button id="btn1" class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div id="home" class="section">
+        <div class="sec-1">
+            <h1 class="title">Easy And Fast<br> Way To <span>Rent</span> Your <br>Car</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita nesciunt optio ad itaque laboriosam.
+                Dolorum similique, repellat , incidunt consequatur provident molestiae praesentium nulla quas sint ex
+                magni molestias . Et doloremque animi optio fuga non modi voluptas vitae, maiores
+            </p>
+            <button class="rent">Rent Car</button>
+        </div>
+        <div class="sec-2">
+            <img src="./bg1.png" class="car">
+            <!-- <img src="./17591-removebg-preview.png" class="bg-car"> -->
+        </div>
+    </div>
+    <div class="address">
+        <!-- Search Start -->
+        <div id="address" class="container-fluid mb-5 wow fadeIn" data-wow-delay="0.1s" style="padding: 35px;">
+            <div class="container">
+                <div class="row g-2">
+                    <div class="col-md-10">
+                        <div class="row g-2">
+                            <div class="col-md-4">
+                                <input type="text" class="form-control border-0 py-3" placeholder="Search Car Modal">
+                            </div>
+
+                            <div class="col-md-4">
+                                <form action="" class="form-select border-0 py-1">
+                                    <label for="">Rent Date</label>
+                                    <input type="datetime-local" name="date" id="date" class="border-0">
+                                </form>
+                            </div>
+                            <div class="col-md-4">
+                                <select class="form-select border-0 py-3">
+                                    <option selected>Location</option>
+                                    <option value="1">Location 1</option>
+                                    <option value="2">Location 2</option>
+                                    <option value="3">Location 3</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <button class="btn btn-dark border-0 w-100 py-3"
+                            onclick="window.location.href='#'">Search</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Search End -->
+    </div>
+
+
+
+    <!--service start -->
+    <section id="service" class="service">
+        <div class="container">
+            <div class="service-content">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="single-service-item">
+                            <div class="single-service-icon">
+                                <img src="./images/dealship/dealership.png" alt="">
+                            </div>
+                            <h2><a href="#">largest dealership of car</a></h2>
+                            <p>
+                                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut den fugit sed quia.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="single-service-item">
+                            <div class="single-service-icon">
+                                <img src="./images/dealship/car.png" alt="">
+                            </div>
+                            <h2><a href="#">unlimited repair warrenty</a></h2>
+                            <p>
+                                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut den fugit sed quia.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="single-service-item">
+                            <div class="single-service-icon">
+                                <img src="./images/dealship/inn.png" alt="">
+                            </div>
+                            <h2><a href="#">insurence support</a></h2>
+                            <p>
+                                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut den fugit sed quia.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!--/.container-->
+
+    </section><!--/.service-->
+    <!--service end-->
+    <!-- Brand new cars start -->
+    <section id="newCar" class="new-cars">
+        <div class="container">
+            <div class="section-header">
+                <p>checkout the latest cars</p>
+                <h2>newest cars</h2>
+            </div>
+            <div class="new-cars-content">
+                <div id="carouselExampleDark" class="carousel carousel-dark slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="10000">
+                            <div class="single-new-cars-item">
+                                <div class="row">
+                                    <div class="col-md-7 col-sm-12">
+                                        <div class="new-cars-img">
+                                            <img src="./images/new-cars-model/ncm1.png" alt="img" />
+                                        </div><!--/.new-cars-img-->
+                                    </div>
+                                    <div class="col-md-5 col-sm-12">
+                                        <div class="new-cars-txt">
+                                            <h2><a href="#">chevrolet camaro za100</a></h2>
+                                            <p>
+                                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                                                dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                            </p>
+                                            <p class="new-cars-para2">
+                                                Sed ut pers unde omnis iste natus error sit voluptatem accusantium
+                                                doloremque laudantium.
+                                            </p>
+                                            <button class="welcome-btn new-cars-btn" onclick="window.location.href='#'">
+                                                view details
+                                            </button>
+                                        </div><!--/.new-cars-txt-->
+                                    </div><!--/.col-->
+                                </div><!--/.row-->
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <div class="single-new-cars-item">
+                                <div class="row">
+                                    <div class="col-md-7 col-sm-12">
+                                        <div class="new-cars-img">
+                                            <img src="./images/new-cars-model/ncm2.png" alt="img" />
+                                        </div><!--/.new-cars-img-->
+                                    </div>
+                                    <div class="col-md-5 col-sm-12">
+                                        <div class="new-cars-txt">
+                                            <h2><a href="#">BMW series-3 wagon</a></h2>
+                                            <p>
+                                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                                                dolore
+                                                eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                                proident,
+                                                sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                            </p>
+                                            <p class="new-cars-para2">
+                                                Sed ut pers unde omnis iste natus error sit voluptatem accusantium
+                                                doloremque laudantium.
+                                            </p>
+                                            <button class="welcome-btn new-cars-btn" onclick="window.location.href='#'">
+                                                view details
+                                            </button>
+                                        </div><!--/.new-cars-txt-->
+                                    </div><!--/.col-->
+                                </div><!--/.row-->
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="single-new-cars-item">
+                                <div class="row">
+                                    <div class=" col-md-7 col-sm-12">
+                                        <div class="new-cars-img">
+                                            <img src="./images/new-cars-model/ncm3.png" alt="img" />
+                                        </div><!--/.new-cars-img-->
+                                    </div>
+                                    <div class="col-md-5 col-sm-12">
+                                        <div class="new-cars-txt">
+                                            <h2><a href="#">ferrari 488 superfast</a></h2>
+                                            <p>
+                                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                                                dolore
+                                                eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                                proident,
+                                                sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                            </p>
+                                            <p class="new-cars-para2">
+                                                Sed ut pers unde omnis iste natus error sit voluptatem accusantium
+                                                doloremque laudantium.
+                                            </p>
+                                            <button class="welcome-btn new-cars-btn" onclick="window.location.href='#'">
+                                                view details
+                                            </button>
+                                        </div><!--/.new-cars-txt-->
+                                    </div><!--/.col-->
+                                </div><!--/.row-->
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Rent Cars -->
+    <section id="rent-cars">
+        <div class="container">
+            <div class="section-header">
+                <p>checkout the featured cars</p>
+                <h2>Rent cars</h2>
+            </div>
+            <div class="row">
+                <!-- car 1 -->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="single-rent">
+                        <div class="card" style="width: 20rem;">
+                            <div class="car-img">
+
+                                <img src="./images/featured-cars/fc1.png" class="card-img-top" alt="...">
+
+                            </div>
+
+                            <div class="card-info">
+                                <div class="card-body">
+                                    <h5 class="card-title">BMW 6-series gran coupe</h5>
+                                    <h6>$89,395</h6>
+                                    model: 2017
+                                    <span class="featured-mi-span"> 3100 mi</span>
+                                    <span class="featured-hp-span"> 240HP</span>
+                                    automatic
+                                    </p>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                    </p>
+                                    <a href="#" id="rent-btnn" class="btn btn-primary"
+                                        onclick="window.location.href='#'">Rent Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- car 2 -->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="single-rent">
+                        <div class="card" style="width: 20rem;">
+                            <div class="car-img">
+
+                                <img src="./images/featured-cars/fc2.png" class="card-img-top" alt="...">
+
+                            </div>
+
+                            <div class="card-info">
+                                <div class="card-body">
+                                    <h5 class="card-title">chevrolet camaro wmv20</h5>
+                                    <h6>$66,575</h6>
+                                    <p>
+                                        model: 2017
+                                        <span class="featured-mi-span"> 3100 mi</span>
+                                        <span class="featured-hp-span"> 240HP</span>
+                                        automatic
+                                    </p>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                    </p>
+                                    <a href="#" id="rent-btnn" class="btn btn-primary"
+                                        onclick="window.location.href='#'">Rent Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- car 3 -->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="single-rent">
+                        <div class="card" style="width: 20rem;">
+                            <div class="car-img">
+
+                                <img src="./images/featured-cars/fc3.png" class="card-img-top" alt="...">
+
+                            </div>
+
+                            <div class="card-info">
+                                <div class="card-body">
+                                    <h5 class="card-title">lamborghini v520</h5>
+                                    <h6>$125 520</h6>
+                                    <p>
+                                        model: 2017
+                                        <span class="featured-mi-span"> 3100 mi</span>
+                                        <span class="featured-hp-span"> 240HP</span>
+                                        automatic
+                                    </p>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                    </p>
+                                    <a href="#" id="rent-btnn" class="btn btn-primary"
+                                        onclick="window.location.href='#'">Rent Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- car 4 -->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="single-rent">
+                        <div class="card" style="width: 20rem;">
+                            <div class="car-img">
+
+                                <img src="./images/featured-cars/fc4.png" class="card-img-top" alt="...">
+
+                            </div>
+
+                            <div class="card-info">
+                                <div class="card-body">
+                                    <h5 class="card-title">audi a3 sedan</h5>
+                                    <h6>$95,500</h6>
+                                    <p>
+                                        model: 2017
+                                        <span class="featured-mi-span"> 3100 mi</span>
+                                        <span class="featured-hp-span"> 240HP</span>
+                                        automatic
+                                    </p>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                    </p>
+                                    <a href="#" id="rent-btnn" class="btn btn-primary"
+                                        onclick="window.location.href='#'">Rent Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- car 5 -->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="single-rent">
+                        <div class="card" style="width: 20rem;">
+                            <div class="car-img">
+
+                                <img src="./images/featured-cars/fc7.png" class="card-img-top" alt="...">
+
+                            </div>
+
+                            <div class="card-info">
+                                <div class="card-body">
+                                    <h5 class="card-title">bmw 8-series coupe</h5>
+                                    <h6>$58,000</h6>
+                                    <p>
+                                        model: 2017
+                                        <span class="featured-mi-span"> 3100 mi</span>
+                                        <span class="featured-hp-span"> 240HP</span>
+                                        automatic
+                                    </p>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                    </p>
+                                    <a href="#" id="rent-btnn" class="btn btn-primary"
+                                        onclick="window.location.href='#'">Rent Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- car 6 -->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="single-rent">
+                        <div class="card" style="width: 20rem;">
+                            <div class="car-img">
+
+                                <img src="./images/featured-cars/fc5.png" class="card-img-top" alt="...">
+
+                            </div>
+
+                            <div class="card-info">
+                                <div class="card-body">
+                                    <h5 class="card-title">porsche 718 cayman</h5>
+                                    <h6>$48,500</h6>
+                                    <p>
+                                        model: 2017
+                                        <span class="featured-mi-span"> 3100 mi</span>
+                                        <span class="featured-hp-span"> 240HP</span>
+                                        automatic
+                                    </p>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                    </p>
+                                    <a href="#" id="rent-btnn" class="btn btn-primary"
+                                        onclick="window.location.href='#'">Rent Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- row ended-->
+        </div>
+    </section>
+    <!-- appointment call -->
+    <div id="BookCar" class="container-xxl py-5">
+        <div class="container">
+            <div class="bg-light rounded p-4">
+                <div class="bg-white rounded p-4" style="border: 1px dashed rgba(0, 185, 142, .3)">
+                    <div class="row g-5 align-items-center">
+                        <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                            <img class="img-fluid rounded w-100" src="./images/clients/call-to-action.jpg" alt="">
+                        </div>
+                        <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                            <div class="mb-4">
+                                <h1 class="mb-3">Contact With Our Agent to Book Your Car</h1>
+                                <p>Eirmod sed ipsum dolor sit rebum magna erat. Tempor lorem kasd vero ipsum sit sit
+                                    diam justo sed vero dolor duo.</p>
+                            </div>
+                            <a href="" id="call" class="btn  py-3 px-4 me-2"><svg id="call-img"
+                                    xmlns="http://www.w3.org/2000/svg" width="18" height="20" fill="currentColor"
+                                    class="bi bi-telephone" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+                                </svg> Make A Call</a>
+                            <a href="" class="btn btn-dark py-3 px-4"><svg id="call-img"
+                                    xmlns="http://www.w3.org/2000/svg" width="18" height="20" fill="currentColor"
+                                    class="bi bi-calendar" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z" />
+                                </svg>Get Appoinment</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- client testimonial -->
+    <div class="client">
+        <div class="container-xxl py-5">
+            <div class="section-header">
+                <h2>Our Client Says</h2>
+
+            </div>
+            <div id="carouselExampleFade" class="carousel slide carousel-fade">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div id="card-client" class="card" style="width: 18rem;">
+                                    <img src="./images/clients/c1.png" class="card-img-top" alt="...">
+
+                                    <div class="card-body">
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div id="card-client" class="card" style="width: 18rem;">
+                                    <img src="./images/clients/c3.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div id="card-client" class="card" style="width: 18rem;">
+                                    <img src="./images/clients/c2.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <!-- second slide -->
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div id="card-client" class="card" style="width: 18rem;">
+                                    <img src="./images/clients/c2.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div id="card-client" class="card" style="width: 18rem;">
+                                    <img src="./images/clients/c3.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div id="card-client" class="card" style="width: 18rem;">
+                                    <img src="./images/clients/c1.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div id="card-client" class="card" style="width: 18rem;">
+                                    <img src="./images/clients/c2.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div id="card-client" class="card" style="width: 18rem;">
+                                    <img src="./images/clients/c1.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div id="card-client" class="card" style="width: 18rem;">
+                                    <img src="./images/clients/c3.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="prev">
+                    <span id="prev-btn" class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="next">
+                    <span id="prev-btn" class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <footer>
+        <div id="footer" class="container-fluid bg-dark text-white-50 footer pt-2 mt-3 mb-1 wow fadeIn"
+            data-wow-delay="0.1s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-white mb-4">Get In Touch</h5>
+                        <p class="mb-2"><img src="./images/dealship/location.png" alt="">123 Street, Karachi, Pakistan
+                        </p>
+                        <p class="mb-2"><img src="./images/dealship/call.png" alt="">+012 345 67890</p>
+                        <p class="mb-2"><img src="./images/dealship/mail.png" alt="">info@example.com</p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social" href=""><img src="./images/dealship/twitter.png"
+                                    alt=""></a>
+                            <a class="btn btn-outline-light btn-social" href=""><img
+                                    src="./images/dealship/facebook.png" alt=""></a>
+                            <a class="btn btn-outline-light btn-social" href=""><img src="./images/dealship/youtube.png"
+                                    alt=""></a>
+                            <a class="btn btn-outline-light btn-social" href=""><img
+                                    src="./images/dealship/linkedin.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div id="linkss" class="col-lg-3 col-md-6">
+                        <h5 class="text-white mb-4">Quick Links</h5>
+                        <a class="btn btn-link text-white-50" href="#rent-cars">Rent Car</a>
+                        <a class="btn btn-link text-white-50" href="#newCar">New Cars</a>
+                        <a class="btn btn-link text-white-50" href="#BookCar">Book Car</a>
+                        <a class="btn btn-link text-white-50" href="">Privacy Policy</a>
+                        <a class="btn btn-link text-white-50" href="">Terms & Condition</a>
+                    </div>
+                    <div id="brand-img" class="col-lg-3 col-md-6">
+                        <h5 class="text-white mb-4">Brands</h5>
+                        <div class="row g-2 pt-2">
+                            <div class="col-4">
+                                <img class="img-fluid rounded bg-light p-1" src="./images/brand/br1.png" alt="">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid rounded bg-light p-1" src="./images/brand/br2.png" alt="">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid rounded bg-light p-1" src="./images/brand/br3.png" alt="">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid rounded bg-light p-1" src="./images/brand/br4.png" alt="">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid rounded bg-light p-1" src="./images/brand/br5.png" alt="">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid rounded bg-light p-1" src="./images/brand/br6.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="newsletter" class="col-lg-3 col-md-6">
+                        <h5 class="text-white mb-4">Newsletter</h5>
+                        <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                        <div class="position-relative mx-auto" style="max-width: 400px;">
+                            <input id="input" class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text"
+                                placeholder="Your email">
+                            <button id="btn-5" type="button"
+                                class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="center">
+                    Copyright &copy; www.TheWeekenRide.com. All rights reserved.
+                </div> -->
+            </div>
+            <div class="center">
+                Copyright &copy; www.TheWeekenRide.com. All rights reserved.
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
